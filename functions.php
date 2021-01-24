@@ -26,7 +26,8 @@ function learnwp_config() {
 		
 		'width' => 1920
 	);
-	add_theme_support('custom-header', $args );
+	add_theme_support( 'custom-header', $args );
+	add_theme_support( 'post-thumbnail' );
 }
 endif; // learnwp_config
 add_action( 'after_setup_theme','learnwp_config', 0 );
