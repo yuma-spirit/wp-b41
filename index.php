@@ -29,17 +29,8 @@
 								// While have posts, show them
 								while(have_posts()): the_post();
 
-							?>
-							<!-- Here show the posts -->
-							<article>
-								<h2><?php the_title(); ?></h2>
-								<?php the_post_thumbnail( array( 275,275 ) ); ?>
-								<p>Posted in <?php echo get_the_date(); ?>by</p>
-								<p>Categories: <?php the_category(' '); ?></p>
-								<p><?php the_tags('Tags: ',', '); ?></p>
-								<p><?php the_content(); ?></p>
-							</article>
-							<?php
+								get_template_part( 'template-parts/content' );
+
 							endwhile;
 							else:
 							?>
