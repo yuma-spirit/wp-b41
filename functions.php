@@ -28,6 +28,7 @@ function learnwp_config() {
 	);
 	add_theme_support( 'custom-header', $args );
 	add_theme_support( 'post-thumbnail' );
+	add_theme_support( 'post-format' );
 }
 endif; // learnwp_config
 add_action( 'after_setup_theme','learnwp_config', 0 );
