@@ -20,31 +20,37 @@ h4{ font-size: 18px; margin-top: 0; }
 
 
 /* Top Bar Section */
-.top-bar{ background: #b9121b; color: #fff; padding: 15px 0; }
+.top-bar{ background: lightgray; color: #fff; padding: 15px 0; }
 
 /* Header - Main Menu */
 .menu-area { 
-	background: black; padding: 15px 0; 
+	background: #1c1c1c; padding: 15px 0; 
 }
 
 /* Slider */
 .slide{ padding: 25px 0; }
 
 /* Services */
-.services{ background: #4c1b1b; padding: 25px 0; color: #fefefe; }
+.services{ padding: 25px 0; } /*color: #fefefe;*/
+.services h1{ text-align: center; text-transform: uppercase; font-size: 28px; }
+.services .widget-wrapper{ text-align: center; }
+.services .widget-wrapper h2{ text-transform: uppercase; font-size: 1.2em; font-weight: 200; }
+.services .widget-wrapper:first-child{ padding: 15px 0; }
+/* .services .widget-wrapper > img{ border: 15px solid #FFF; } */
+
 
 /* Middle Area */
 .middle-area{ padding: 25px 0; }
 .middle-area h1{ color: #4c1b1b; text-transform: uppercase;  }
 
-/* Middle Area - Sidebar */
-.sidebar{ padding: 30px; margin: 0 0 30px;  background-color: lightgray; border-radius: 2px; }
+/* Middle Area - Sidebar */ 
+.sidebar{ background-color: #076305; color: white; padding: 30px; margin: 0 0 30px; border-radius: 2px; box-shadow: 0 2px 8px 0 rgb(0 0 0 / 5%);}
 
 .main-menu ul{ list-style: none; padding: 0; margin: 0; font-size: 20px; }
 .main-menu ul li{ display: inline;  margin: 0 30px 0 0; font-family: 'Roboto Slab', serif; }
 .main-menu ul li:last-child{ margin: 0; }
 .main-menu ul li a{ text-transform: uppercase; color:white; text-decoration: none; }
-.main-menu ul  li.current-menu-item a{ color: lightskyblue; }
+.main-menu ul  li.current-menu-item a{ color: #12A20E; }
 
 /* Footer */
 footer{ background: #000; padding: 15px 0; color: #fcfae1; }
@@ -60,7 +66,7 @@ footer{ background: #000; padding: 15px 0; color: #fcfae1; }
 .wp-post-image{ float: left; margin: 0 15px 10px 0; }
 .format-image h2 { padding: 15px; }
 .format-video h2 { padding: 15px; }
-.format-standard h2 { color: #444; padding: 15px; }
+.format-standard h2 { color: #444; padding: 15px; background-color: #1c1c1c; color: white; text-align: center; font-size: 1.5rem; }
 .blog article{ display: inline-block; margin: 0 0 30px; width: 100%; }
 .blog article h2{ margin-bottom: 15px; }
 .blog article p > img{ width: 100%; height: auto; display: block; }

@@ -10,9 +10,12 @@
 			</section>
 			<section class="services">
 				<div class="container">
-				<h1>Our Services</h1>
 					<div class="row">
-						<div class="col-sm-4">
+						<?php get_sidebar( 'home' ); ?>
+						<div class="col-sm-9">
+						<h1>Our Services</h1>
+							<div class="row">
+							<div class="col-sm-4">
 							<div class="services-item">
 								<?php 
 									if(is_active_sidebar(' services-1 ')) {
@@ -39,6 +42,8 @@
 								?>
 							</div>
 						</div>
+							</div>
+						</div>
 					</div>
 				</div>
 
@@ -46,9 +51,27 @@
 			<section class="middle-area">
 				<div class="container">
 					<div class="row">
-						<?php get_sidebar( 'home' ); ?>
-						<div class="news col-md-9">
-							<p>This will be the news area of the Home Page</p>
+						<div class="news col-md-9 offset-md-3">
+							<div class="row">
+								<?php 
+
+								$featured = new WP_Query( 'post_type=post&posts_per_page=5&cat=1' );
+
+								if ( $featured->have_posts() ):
+									while( $featured->have_posts() ): $featured->the_post();
+								?>
+
+								<div class="col-12">
+									<?php get_template_part( 'template-parts/content', 'featured' ); ?>
+								</div>
+
+								<?php
+									endwhile;
+									wp_reset_postdata();
+								endif;
+
+								?>
+							</div>
 						</div>
 					</div>
 				</div>

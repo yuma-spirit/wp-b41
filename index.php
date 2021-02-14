@@ -4,20 +4,6 @@
 	
 	<div class="content-area">
 		<main>
-			<section class="slide">
-				<div class="container">
-					<div class="row">
-						Slide
-					</div>
-				</div>
-			</section>
-			<section class="services">
-				<div class="container">
-					<div class="row">
-						Services
-					</div>
-				</div>
-			</section>
 			<section class="middle-area">
 				<div class="container">
 					<div class="row">
@@ -33,7 +19,7 @@
 							endwhile;
 							else:
 							?>
-
+	
 							<p>There's nothing yet to be displayed!</p>
 
 							<?php endif; ?>
