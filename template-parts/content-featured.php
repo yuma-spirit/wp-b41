@@ -1,7 +1,7 @@
 <article <?php post_class( array( 'class' => 'featured' ) ); ?>>
 	<h2><?php the_title(); ?></h2>
 	<div class="thumbnail">
-		<?php the_post_thumbnail( 'medium', array( 'class' => 'img-fluid' ) ); ?>
+		<?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img-fluid' ) ); ?>
 	</div>
 
 	<div class="meta-info">

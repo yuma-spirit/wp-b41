@@ -4,7 +4,7 @@
 			<section class="slide">
 				<div class="container">
 					<div class="row">
-						Slide
+						<!-- Slide -->
 					</div>
 				</div>
 			</section>
@@ -12,36 +12,36 @@
 				<div class="container">
 					<div class="row">
 						<?php get_sidebar( 'home' ); ?>
-						<div class="col-sm-9">
-						<h1>Our Services</h1>
+						<div class="col-md-9">
+							<h1>Our Services</h1>
 							<div class="row">
-							<div class="col-sm-4">
-							<div class="services-item">
-								<?php 
-									if(is_active_sidebar(' services-1 ')) {
-										dynamic_sidebar( 'services-1' );
-									}
-								?>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="services-item">
-								<?php 
-									if(is_active_sidebar(' services-2 ')) {
-										dynamic_sidebar( 'services-2' );
-									}
-								?>	
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="services-item">
-								<?php 
-									if(is_active_sidebar(' services-3 ')) {
-										dynamic_sidebar( 'services-3' );
-									}
-								?>
-							</div>
-						</div>
+								<div class="col-sm-4">
+									<div class="services-item">
+										<?php 
+											if(is_active_sidebar(' services-1 ')) {
+												dynamic_sidebar( 'services-1' );
+											}
+										?>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="services-item">
+										<?php 
+											if(is_active_sidebar(' services-2 ')) {
+												dynamic_sidebar( 'services-2' );
+											}
+										?>	
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="services-item">
+										<?php 
+											if(is_active_sidebar(' services-3 ')) {
+												dynamic_sidebar( 'services-3' );
+											}
+										?>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -55,7 +55,7 @@
 							<div class="row">
 								<?php 
 
-								$featured = new WP_Query( 'post_type=post&posts_per_page=5&cat=1' );
+								$featured = new WP_Query( 'post_type=post&posts_per_page=5&category_name=Atopic' );
 
 								if ( $featured->have_posts() ):
 									while( $featured->have_posts() ): $featured->the_post();
@@ -79,7 +79,7 @@
 			<section class="map">
 				<div class="container">
 					<div class="row">
-						Map
+						<!-- Map -->
 					</div>
 				</div>
 			</section>
