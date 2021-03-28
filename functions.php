@@ -93,4 +93,3 @@ function learnwp_sidebars () {
 		)
 	);		
 }
-

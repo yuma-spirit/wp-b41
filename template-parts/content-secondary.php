@@ -1,4 +1,4 @@
-<article <?php post_class( array( 'class' => 'featured' ) ); ?>>
+<article <?php post_class( array( 'class' => 'secondary' ) ); ?>>
 	<h2><?php the_title(); ?></h2>
 	<div class="thumbnail">
 		<?php the_post_thumbnail( 'medium', array( 'class' => 'img-fluid' ) ); ?>
@@ -19,7 +19,6 @@
 				}
 			?>
 		</p>
-		<p><span><?php echo get_the_date(); ?></span></p>
 	</div>
 	<p><?php the_content(); ?></p>
 </article>
