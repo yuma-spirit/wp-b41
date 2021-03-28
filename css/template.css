@@ -42,15 +42,22 @@ h4{ font-size: 18px; margin-top: 0; }
 /* Middle Area */
 .middle-area{ padding: 25px 0; }
 .middle-area h1{ color: #4c1b1b; text-transform: uppercase;  }
+.middle-area .news article{ padding: 20px 20px;  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 5%); }
 
 /* Middle Area - Sidebar */ 
-.sidebar{ background-color: #1C2833 ; color: white; padding: 30px; margin: 0 0 30px; border-radius: 5px; box-shadow: 0 2px 8px 0 rgb(0 0 0 / 5%);}
+.sidebar{ 
+	background-color: #1C2833 ; 
+	color: white; padding: 30px; 
+	margin: 0 0 30px; border-radius: 5px; 
+	box-shadow: 0 2px 8px 0 rgb(0 0 0 / 5%); 
+	position: fixed;
+}
 
 .main-menu ul{ list-style: none; padding: 0; margin: 0; font-size: 20px; }
 .main-menu ul li{ display: inline;  margin: 0 30px 0 0; font-family: 'Roboto Slab', serif; }
 .main-menu ul li:last-child{ margin: 0; }
 .main-menu ul li a{ text-transform: uppercase; color:white; text-decoration: none; }
-.main-menu ul  li.current-menu-item a{ color: #12A20E; }
+.main-menu ul  li.current-menu-item a{ color: red; }
 
 /* Footer */
 footer{ background: #1C2833; padding: 15px 0; color: #fcfae1; }
