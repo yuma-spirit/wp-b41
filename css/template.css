@@ -1,4 +1,4 @@
-/* Google Fonts */
+/* ========== Google Fonts ========== */
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,900');
 @import url('https://fonts.googleapis.com/css?family=Lato:400,900');
 /* Roboto Slab */
@@ -11,77 +11,228 @@ html,body {
 	overflow-x:hidden;
 }
 
-body{ font: 16px/1.6 'Oswald', sans-serif;  }
-body p{ font: 16px/1.6 'Lato', sans-serif; }
-h1{ font-size: 28px; margin: 15px 0 15px; }
-h2{ font-size: 24px; margin-top: 0; }
-h3{ font-size: 20px; margin-top: 0; }
-h4{ font-size: 18px; margin-top: 0; }
-
-
-/* Top Bar Section */
-.top-bar{ background: lightgray; color: #fff; padding: 15px 0; }
-
-/* Header - Main Menu */
-.menu-area { 
-	background: #1C2833; padding: 15px 0; 
+body { 
+	font: 16px/1.6 'Oswald', sans-serif; 
 }
 
-/* Slider */
-.slide{ padding: 25px 0; }
+body p { 
+	font: 16px/1.6 'Lato', sans-serif; 
+}
 
-/* Services */
-.services{ padding: 25px 0; } /*color: #fefefe;*/
-.services h1{ text-align: center; text-transform: uppercase; font-size: 28px; }
-.services .widget-wrapper{ text-align: center; }
-.services .widget-wrapper h2{ text-transform: uppercase; font-size: 1.2em; font-weight: 200; }
-.services .widget-wrapper:first-child{ padding: 15px 0; }
+h1 { 
+	font-size: 28px; 
+	margin: 15px 0 15px; 
+}
+
+h2 { 
+	font-size: 24px; 
+	margin-top: 0; 
+}
+
+h3 { 
+	font-size: 20px; 
+	margin-top: 0; 
+}
+
+h4 { 
+	font-size: 18px; 
+	margin-top: 0; 
+}
+
+/* ========== Top Bar Section ========== */
+.top-bar { 
+	background: lightgray; 
+	color: #fff; 
+	padding: 15px 0; 
+}
+
+/* ========== Header Menu Main Menu ========== */
+.menu-area { 
+	background-color: #343a40;
+	padding: 5px 0; 
+}
+
+.main-menu ul { list-style: none; 
+	padding: 0; 
+	margin: 0; 
+	font-size: 15px; 
+}
+
+.main-menu ul li { 
+	display: inline; 
+	margin: 0 30px 0 0; 
+	font-family: 'Roboto Slab', serif; 
+}
+
+.main-menu ul li:last-child { 
+	margin: 0; 
+}
+
+.main-menu ul li a { 
+	text-transform: uppercase; 
+	color: #c2c2c2; 
+	text-decoration: none; 
+}
+
+.main-menu ul li a:hover { 
+	color: #36a548; 
+}
+
+.main-menu ul li.current-menu-item a { 
+	color: #36a548; 
+}
+
+/* ========== Slider ========== */
+.slide { 
+	padding: 25px 0; 
+}
+
+/* ========== Services ========== */
+.services { 
+	padding: 25px 0; 
+} /*color: #fefefe;*/
+
+.services h1 { 
+	text-align: center; 
+	text-transform: uppercase; 
+	font-size: 28px; 
+}
+
+.services .widget-wrapper { 
+	text-align: center; 
+}
+
+.services .widget-wrapper h2 { 
+	text-transform: uppercase; 
+	font-size: 1.2em; 
+	font-weight: 200; 
+}
+
+.services .widget-wrapper:first-child { 
+	padding: 15px 0; 
+}
 /* .services .widget-wrapper > img{ border: 15px solid #FFF; } */
 
-
-/* Middle Area */
-.middle-area{ padding: 25px 0; }
-.middle-area h1{ color: #4c1b1b; text-transform: uppercase;  }
-.middle-area .news article{ padding: 20px 20px;  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 5%); }
-
-/* Middle Area - Sidebar */ 
-.sidebar{ 
-	background-color: #1C2833 ; 
-	color: white; padding: 30px; 
-	margin: 0 0 30px; border-radius: 5px; 
-	box-shadow: 0 2px 8px 0 rgb(0 0 0 / 5%); 
-	position: fixed;
+/* ========== Middle Area ==========*/
+.middle-area { 
+	padding: 25px 0; 
 }
 
-.main-menu ul{ list-style: none; padding: 0; margin: 0; font-size: 20px; }
-.main-menu ul li{ display: inline;  margin: 0 30px 0 0; font-family: 'Roboto Slab', serif; }
-.main-menu ul li:last-child{ margin: 0; }
-.main-menu ul li a{ text-transform: uppercase; color:white; text-decoration: none; }
-.main-menu ul  li.current-menu-item a{ color: red; }
+.middle-area h1 { 
+	color: #4c1b1b; 
+	text-transform: uppercase; 
+}
 
-/* Footer */
-footer{ background: #1C2833; padding: 15px 0; color: #fcfae1; }
+.middle-area .news article { 
+	padding: 20px 20px; 
+	background-color: #fafafa; 
+}
 
-/* Footer - Footer Menu */
-.footermenu ul{ list-style: none; padding: 0; margin: 0; font-size: 20px; }
-.footermenu ul li{ display: inline;  margin: 0 15px 0 0;}
-.footermenu ul li:last-child{ margin: 0; }
-.footermenu ul li a{ color: #fcfae1;  text-decoration: none;}
-.footermenu ul  li.current-menu-item a{ color:#e58888; }
+/* ========== Sidebar ========== */ 
+.sidebar { 
+	background-color: #b2c8f3 ;  
+	margin: 0 0 30px;
+	border-radius: 2px 2px;
+}
 
-/* Blog */
-.wp-post-image{ float: left; margin: 0 15px 10px 0; }
-.format-image h2 { padding: 15px; text-align: center; font-size: 1.5rem; }
-.format-video h2 { padding: 15px; text-align: center; font-size: 1.5rem; }
-.format-standard h2 { color: #444; padding: 15px; text-align: center; font-size: 1.5rem; }
-.blog article{ display: inline-block; margin: 0 0 30px; width: 100%; }
-.blog article h2{ margin-bottom: 15px; }
-.blog article p > img{ width: 100%; height: auto; display: block; }
-.blog .meta-info p{ line-height: 1em; font-weight: bold; }
-.blog .meta-info p > a{ color: #9d9d9d; font-weight: normal; }
+.sidebar ul li  { 
+	list-style: none; 
+}
 
+.sidebar ul li a { 
+	color: #3c4146; 
+	list-style: none; 
+}
+
+.sidebar ul li a:hover { 
+	color: #36a548; 
+}
+
+/* ========== Widget ========== */
 .widget-title {
-	border-bottom: 1px solid #000000;
+	color: #3c4146;
 	padding-bottom:10px;
 }
+
+/* ========== Footer ========== */
+footer { 
+	background: #1C2833; 
+	padding: 15px 0; 
+	color: #fcfae1; 
+}
+
+.footermenu ul { 
+	list-style: none; 
+	padding: 0; margin: 0; 
+	font-size: 20px; 
+}
+
+.footermenu ul li { 
+	display: inline; 
+	margin: 0 15px 0 0; 
+}
+
+.footermenu ul li:last-child { 
+	margin: 0; 
+}
+
+.footermenu ul li a { 
+	color: #fcfae1; 
+	text-decoration: none;
+}
+
+.footermenu ul  li.current-menu-item a { 
+	color:#e58888; 
+}
+
+/* ========== Blog ========== */
+.wp-post-image { 
+	margin: 0 15px 10px 0; 
+}
+
+.format-image h2 { 
+	padding: 15px; 
+	text-align: center; 
+	font-size: 1.5rem; 
+}
+
+.format-video h2 { 
+	padding: 15px; 
+	text-align: center; 
+	font-size: 1.5rem; 
+}
+
+.format-standard h2 { 
+	color: #444; 
+	padding: 15px; 
+	text-align: center; 
+	font-size: 1.5rem; 
+}
+
+.blog article { 
+	display: inline-block; 
+	margin: 0 0 30px; 
+	width: 100%; 
+}
+
+.blog article h2 { 
+	margin-bottom: 15px; 
+}
+
+.blog article p > img { 
+	width: 100%; 
+	height: auto; 
+	display: block; 
+}
+
+.blog .meta-info p { 
+	line-height: 1em; 
+	font-weight: bold; 
+}
+
+.blog .meta-info p > a { 
+	color: #9d9d9d; 
+	font-weight: normal; 
+}
+
 
